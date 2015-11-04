@@ -1,0 +1,46 @@
+{
+  "collection": {
+    "header": "Collection problem",
+    "pages": {
+      "personal-details": {
+        "header": "What are your personal details?",
+        "subheader": "We need these details to review the problem."
+      },
+      "check-details": {
+        "header": "Is the information you have given us correct?",
+        "subheader": "Check and make sure the information below is right. If it isn't you can change it here.",
+        "tables": {
+          "problem-details": {
+            "title": "Problem details",
+            "where-radio": {
+              "label": "Attendance"
+            },
+            "reason": {
+              "label": "Reason",
+              "under-age": "Under age"
+            }
+          },
+          "others-details": {
+            "title": "Other persons details",
+            "fullname": "Full name",
+            "date-of-birth": "Date of birth",
+            "nationality": "Nationality",
+            "email": "Email",
+            "phone": "Phone",
+            "id-number": "Identity document number"
+          },
+          "personal-details": {
+            "title": "Your contact & personal details"
+          }
+        }
+      },
+      "confirmation": {
+        "next": {
+          "paragraphs": {
+            "one": "We will now review the information you have given us to find out why there was a problem with your BRP collection."
+          }
+        }
+      }
+    }
+  }
+}

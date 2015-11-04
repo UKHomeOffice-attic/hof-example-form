@@ -1,0 +1,100 @@
+{{#data}}
+  {{#t}}emails.collection.header{{/t}}
+
+  Dear {{fullname}}
+
+  {{#t}}journeys.collection.pages.confirmation.next.paragraphs.one{{/t}}
+  {{#t}}pages.confirmation.next.not-specified.para.two{{/t}}
+  {{#t}}pages.confirmation.next.not-specified.para.three{{/t}}
+
+  {{#t}}emails.you-sent{{/t}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.problem-details.title{{/t}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.problem-details.where-radio.label{{/t}}
+  {{example-radio}}
+  {{#collection-date}}
+  {{collection-date-formatted}}
+  {{/collection-date}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.problem-details.reason.label{{/t}}
+  {{#under-age}}{{#t}}fields.reason-radio.options.under-age.label{{/t}}{{/under-age}}
+  {{#non-identity}}{{#t}}fields.reason-radio.options.non-identity.label{{/t}}{{/non-identity}}
+  {{#others-identity}}{{#t}}fields.reason-radio.options.others-identity.label{{/t}}{{/others-identity}}
+  {{#others-auth}}{{#t}}fields.reason-radio.options.others-auth.label{{/t}}{{/others-auth}}
+  {{#passport-family}}{{#t}}fields.reason-radio.options.passport-family.label{{/t}}{{/passport-family}}
+  {{#passport-lost}}{{#t}}fields.reason-radio.options.passport-lost.label{{/t}}{{/passport-lost}}
+  {{#passport-stamp}}{{#t}}fields.reason-radio.options.passport-stamp.label{{/t}}{{/passport-stamp}}
+  {{#no-brp}}{{#t}}fields.reason-radio.options.no-brp.label{{/t}}{{/no-brp}}
+  {{#other}}{{#t}}fields.reason-radio.options.other.label{{/t}}{{/other}}
+
+  {{#reason-under-age}}{{reason-under-age}}{{/reason-under-age}}
+  {{#reason-non-identity}}{{reason-non-identity}}{{/reason-non-identity}}
+  {{#reason-others-identity}}{{reason-others-identity}}{{/reason-others-identity}}
+  {{#reason-others-auth}}{{reason-others-auth}}{{/reason-others-auth}}
+  {{#reason-passport-family}}{{reason-passport-family}}{{/reason-passport-family}}
+  {{#reason-passport-lost}}{{reason-passport-lost}}{{/reason-passport-lost}}
+  {{#reason-passport-stamp}}{{reason-passport-stamp}}{{/reason-passport-stamp}}
+  {{#reason-no-brp}}{{reason-no-brp}}{{/reason-no-brp}}
+  {{#reason-other}}{{reason-other}}{{/reason-other}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.others-details.title{{/t}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.others-details.fullname{{/t}}
+  {{nominated-fullname}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.others-details.date-of-birth{{/t}}
+  {{nominated-date-formatted}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.others-details.nationality{{/t}}
+  {{nominated-nationality}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.others-details.id-number{{/t}}
+  {{nominated-id-number}}
+
+  {{#t}}journeys.collection.pages.check-details.tables.personal-details.title{{/t}}
+
+  {{#contact-address-street}}
+  {{#t}}pages.check-details.table.headers.contact-address{{/t}}
+  {{contact-address-street}},
+  {{contact-address-town}},
+  {{#contact-address-county}}
+  {{contact-address-county}},
+  {{/contact-address-county}}
+  {{contact-address-postcode}}
+  {{/contact-address-street}}
+
+  {{#t}}pages.check-details.table.headers.fullname{{/t}}
+  {{fullname}}
+
+  {{#t}}pages.check-details.table.headers.date-of-birth{{/t}}
+  {{date-of-birth-formatted}}
+
+  {{#t}}pages.check-details.table.headers.nationality{{/t}}
+  {{nationality}}
+
+  {{#passport}}
+  {{#t}}pages.check-details.table.headers.passport{{/t}}
+  {{passport}}
+  {{/passport}}
+
+  {{#phone}}
+  {{#t}}pages.check-details.table.headers.phone{{/t}}
+  {{phone}}
+  {{/phone}}
+
+  {{#email}}
+  {{#t}}pages.check-details.table.headers.email{{/t}}
+  {{email}}
+  {{/email}}
+
+  {{#org-help}}
+  Help from a {{org-type}} called {{rep-name}}
+  {{/org-help}}
+
+{{/data}}
+
+
+If you're unsure an email is from UKVI:
+ * do not reply to it or click any links
+ * forward it to phishing@homeoffice.gsi.gov.uk

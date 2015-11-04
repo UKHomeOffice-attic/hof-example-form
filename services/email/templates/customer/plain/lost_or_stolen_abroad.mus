@@ -1,0 +1,45 @@
+{{#data}}
+  {{#t}}emails.lost-stolen.header{{/t}}
+
+  Dear {{fullname}}
+
+  We will contact you in the next working day to tell you what to do.
+
+  As you are outside the UK, you may need to apply for a temporary visa to get back to the UK.
+
+  We will tell you if you need to apply for a temporary visa when we contact you.
+
+  Here is the information you have sent us:
+
+  {{#t}}pages.check-details-error.personal-details-table.headers.fullname{{/t}}
+  {{fullname}}
+
+  {{#t}}pages.check-details-error.personal-details-table.headers.date-of-birth{{/t}}
+  {{date-of-birth-day}}-{{date-of-birth-month}}-{{date-of-birth-year}}
+
+  {{#t}}pages.check-details-error.personal-details-table.headers.nationality{{/t}}
+  {{nationality}}
+
+  {{#contact-address-street}}
+    {{#t}}emails.address{{/t}}
+    {{contact-address-street}},
+    {{contact-address-town}},
+    {{#contact-address-county}}{{contact-address-county}},{{/contact-address-county}}
+    {{contact-address-postcode}}
+  {{/contact-address-street}}
+
+  {{#phone}}
+    {{#t}}emails.phone{{/t}}
+    {{phone}}
+  {{/phone}}
+
+  {{#org-help}}
+  Help from a {{org-type}} called {{rep-name}}
+  {{/org-help}}
+
+{{/data}}
+
+
+If you're unsure an email is from UKVI:
+ * do not reply to it or click any links
+ * forward it to phishing@homeoffice.gsi.gov.uk

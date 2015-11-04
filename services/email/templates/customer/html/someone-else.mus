@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if !IE]><!--> <html>             <!--<![endif]-->
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>{{subject}}</title>
+</head>
+
+  <body style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;margin: 0;color:#0b0c0c">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="100%" height="53px" bgcolor="#0b0c0c">
+          <table width="580" cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td width="100%" bgcolor="#0b0c0c" valign="middle">
+                <img width="152" height="31" src="cid:govuk_logotype_email" alt="GOV.UK" border="0" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+      <tr>
+        <td width="100%">
+          <table width="580" cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td width="100%" class="header" style="padding-top: 10px;" colspan="2">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+                  <tr>
+                    <td width="6" style="border-left: 2px solid #009390;"><img src="cid:spacer_image" alt="" width="6px" height="26px" style="display: block;" /></td>
+                    <td width="26" height="26"><img src="cid:ho_crest_27px" alt="Home Office Logo" style="width: 26px; height: 26px; display:block;"></td>
+                    <td width="7"><img src="cid:spacer_image" alt="" width="7px" height="26px" style="display: block;" /></td>
+                    <td style="font-family: Helvetica, Arial, sans-serif;">
+                      <h2 class="organisation-logo" style="font-size: 18px; line-height: 20px; font-weight: 300; margin: 0"><span>UK Visas and Immigration</span></h2>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td width="75%" style="font-family: Helvetica, Arial, sans-serif;">
+                <p style="font-weight: 700;font-size: 16px;line-height: 1 ;margin: 10px 0 10px 0;">&nbsp;</p>
+              </td>
+              <td width="25%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="75%" style="font-family: Helvetica, Arial, sans-serif;">
+                {{#data}}
+
+                  <p style="font-size: 23px; color: #000; line-height: 1.32; margin: 0 0 20px 0;">{{#t}}emails.someone-else.header{{/t}}</p>
+
+                  <!-- OTHER PERSONS DETAILS TABLE -->
+                  <p style="font-size: 19px; font-weight: bold; color: #000; line-height: 1.32; margin: 0 0 10px 0;">{{#t}}pages.someone-else-check-details.tables.other-person.title{{/t}}</p>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="margin: 0 0 20px 0;">
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.someone-else-check-details.tables.other-person.fullname{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{changed-person-fullname}}</p></td>
+                    </tr>
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.someone-else-check-details.tables.other-person.date-of-birth{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{changed-person-date-formatted}}</p></td>
+                    </tr>
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.someone-else-check-details.tables.other-person.nationality{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{changed-person-nationality}}</p></td>
+                    </tr>
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.someone-else-check-details.tables.other-person.id-number{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{changed-person-id-number}}</p></td>
+                    </tr>
+                  </table>
+
+                  <!-- PERSONAL DETAILS TABLE -->
+                  <p style="font-size: 19px; font-weight: bold; color: #000; line-height: 1.32; margin: 0 0 10px 0;">{{#t}}pages.someone-else-check-details.tables.personal-details.title{{/t}}</p>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="margin: 0 0 20px 0;">
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.fullname{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{fullname}}</p></td>
+                    </tr>
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.date-of-birth{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{#date-of-birth-formatted}}{{date-of-birth-formatted}}{{/date-of-birth-formatted}}</p></td>
+                    </tr>
+                    <tr style="border-top: 1px solid #009390;">
+                      <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.nationality{{/t}}</p></td>
+                      <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{nationality}}</p></td>
+                    </tr>
+                    {{#passport}}
+                      <tr style="border-top: 1px solid #009390;">
+                        <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.passport{{/t}}</p></td>
+                        <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{passport}}</p></td>
+                      </tr>
+                    {{/passport}}
+                    {{#email}}
+                      <tr style="border-top: 1px solid #009390;">
+                        <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.email{{/t}}</p></td>
+                        <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{email}}</p></td>
+                      </tr>
+                    {{/email}}
+                    {{#phone}}
+                      <tr style="border-top: 1px solid #009390;">
+                        <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.phone{{/t}}</p></td>
+                        <td width="75%"><p style="font-size: 16px; color: #000; margin: 10px 0;">{{phone}}</p></td>
+                      </tr>
+                    {{/phone}}
+                    {{^email}}
+                    {{#contact-address-street}}
+                      <tr style="border-top: 1px solid #009390;">
+                        <td width="25%"><p style="font-size: 16px; color: #6f777b; margin: 10px 0;">{{#t}}pages.check-details.table.headers.contact-address{{/t}}</p></td>
+                        <td width="75%">
+                          <p style="font-size: 16px; color: #000; margin: 10px 0;">
+                            {{contact-address-street}},
+                            {{contact-address-town}},
+                            {{#contact-address-county}}{{contact-address-county}},{{/contact-address-county}}
+                            {{contact-address-postcode}}
+                          </p>
+                        </td>
+                      </tr>
+                    {{/contact-address-street}}
+                    {{/email}}
+                  </table>
+
+                {{/data}}
+
+
+                <p style="font-size: 16px; color: #6f777b; line-height: 1.125; margin: 0 0 30px 0;">If you're unsure an email is from UKVI:</p>
+
+                <ul>
+                  <li style="font-size: 16px; color: #6f777b; line-height: 1.125; margin: 0 0 10px 0;">do not reply to it or click any links</li>
+                  <li style="font-size: 16px; color: #6f777b; line-height: 1.125; margin: 0 0 30px 0;">forward it to phishing@homeoffice.gsi.gov.uk</li>
+                </ul>
+              </td>
+              <td width="25%">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "you-sent": "Here is the information you have sent us",
+  "address": "Contact address",
+  "phone": "Phone number",
+  "caseworker": {
+    "country": "Current location",
+    "date-lost": "Date realised"
+  },
+  "collection": {
+    "header": "Collection problem form"
+  }
+}

@@ -1,0 +1,201 @@
+{
+    "example-dob": {
+      "label": "Date",
+      "legend": "Date on the letter",
+      "hint": "For example, 11  6  2015"
+    },
+    "example-dob-day": {
+      "label": "Day"
+    },
+    "example-dob-month": {
+      "label": "Month"
+    },
+    "example-dob-year": {
+      "label": "Year"
+    },
+    "example-radio": {
+      "options": {
+        "superman": {
+          "label": "Superman"
+        },
+        "batman": {
+          "label": "Batman"
+        },
+        "spiderman": {
+          "label": "Spiderman"
+        }
+      }
+    },
+    "reason-radio": {
+      "options": {
+        "under-age": {
+          "legend": "I am under 18 and attempted collection without my Responsible Adult",
+          "label": "I am under 18 and attempted collection without my Responsible Adult"
+        },
+        "non-identity": {
+          "legend": "My identity could not be confirmed",
+          "label": "My identity could not be confirmed"
+        },
+        "others-identity": {
+          "legend": "The identity of someone collecting on my behalf could not be confirmed",
+          "label": "The identity of someone collecting on my behalf could not be confirmed"
+        },
+        "others-auth": {
+          "legend": "The Home Office did not authorise someone else to collect on my behalf",
+          "label": "The Home Office did not authorise someone else to collect on my behalf"
+        },
+        "passport-family": {
+          "legend": "The vingette in my passport is not linked to my family",
+          "label": "The vingette in my passport is not linked to my family"
+        },
+        "passport-lost": {
+          "legend": "I have lost my passport",
+          "label": "I have lost my passport"
+        },
+        "passport-stamp": {
+          "legend": "My passport does not contain a valid entry stamp",
+          "label": "My passport does not contain a valid entry stamp"
+        },
+        "no-brp": {
+          "legend": "My BRP was not there",
+          "label": "My BRP was not there"
+        },
+        "other": {
+          "legend": "Other",
+          "label": "Other"
+        }
+      }
+    },
+    "reason-under-age": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-non-identity": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-others-identity": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-others-auth": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-passport-family": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-passport-lost": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-passport-stamp": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-no-brp": {
+      "label": "Please describe the problem (optional)"
+    },
+    "reason-other": {
+      "label": "Please describe the problem (optional)"
+    },
+    "nominated-fullname": {
+      "label": "Full name"
+    },
+    "nominated-nationality": {
+      "label": "Country of nationality"
+    },
+    "nominated-id-number": {
+      "label": "Identity document number"
+    },
+    "nominated-date": {
+      "label": "Date",
+      "legend": "Date of birth",
+      "hint": "For example, 31  3  1970"
+    },
+    "nominated-date-day": {
+      "label": "Day"
+    },
+    "nominated-date-month": {
+      "label": "Month"
+    },
+    "nominated-date-year": {
+      "label": "Year"
+    },
+    "date-of-birth": {
+      "legend": "Date of birth",
+      "hint": "For example, 31  3  1970"
+    },
+    "date-of-birth-day": {
+      "label": "Day"
+    },
+    "date-of-birth-month": {
+      "label": "Month"
+    },
+    "date-of-birth-year": {
+      "label": "Year"
+    },
+    "delivery-details": {
+      "label": "If the courier could have problems delivering to this address, for example there's no door number, then let us know and we'll contact them. (optional)"
+    },
+    "address": {
+      "legend": "Address"
+    },
+    "address-street": {
+      "label": "House name or number and street"
+    },
+    "address-town": {
+      "label": "Town/City"
+    },
+    "address-county": {
+      "label": "County (optional)"
+    },
+    "address-postcode": {
+      "label": "Postcode"
+    },
+    "fullname": {
+      "label": "Full name"
+    },
+    "nationality": {
+      "label": "Country of nationality"
+    },
+    "passport": {
+      "label": "Passport number (optional)"
+    },
+    "email": {
+      "label": "Email address"
+    },
+    "no-email": {
+      "label": "I do not have an email address"
+    },
+    "phone": {
+      "label": "Phone number (optional)"
+    },
+    "country": {
+      "legend": "Inside the UK",
+      "label": "Which country are you in?"
+    },
+    "org-help": {
+      "options": {
+        "yes": {
+          "label": "Yes"
+        },
+        "no": {
+          "label": "No"
+        }
+      }
+    },
+    "rep-name": {
+      "label": "Full name"
+    },
+    "org-type": {
+      "options": {
+        "pbs": {
+          "label": "PBS sponsor"
+        },
+        "legal": {
+          "label": "Legal represntative"
+        },
+        "relative": {
+          "label": "Relative/friend"
+        },
+        "support": {
+          "label": "Support organisation"
+        }
+      }
+    }
+  }

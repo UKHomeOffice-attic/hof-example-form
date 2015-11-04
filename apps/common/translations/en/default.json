@@ -1,0 +1,24 @@
+{
+	"buttons": {
+		"continue": "Continue",
+		"send": "Send",
+		"change": "Change",
+		"close": "Close"
+	},
+	"errorlist": {
+		"title": {
+			"single": "Please fix the following error",
+			"multiple": "Please fix the following errors"
+		}
+	},
+	"errors": {
+		"default": {
+			"title": "Sorry, something went wrong",
+			"message": "A server exception occurred. Please try again."
+		},
+		"session": {
+			"title": "Sorry, you'll have to start again",
+			"message": "You haven't entered any details for 20 minutes, so we have cleared your information to keep it secure."
+		}
+	}
+}

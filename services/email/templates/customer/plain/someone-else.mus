@@ -1,0 +1,72 @@
+{{#data}}
+  {{#t}}emails.someone-else.header{{/t}}
+
+  Dear {{fullname}}
+
+  {{#t}}pages.someone-else-confirmation.paragraph{{/t}}
+  {{#t}}pages.confirmation.next.not-specified.para.two{{/t}}
+  {{#t}}pages.confirmation.next.not-specified.para.three{{/t}}
+
+  {{#t}}emails.you-sent{{/t}}
+
+  {{#t}}pages.someone-else-check-details.tables.other-person.title{{/t}}
+
+  {{#t}}pages.someone-else-check-details.tables.other-person.fullname{{/t}}
+  {{changed-person-fullname}}
+
+  {{#t}}pages.someone-else-check-details.tables.other-person.date-of-birth{{/t}}
+  {{changed-person-date-formatted}}
+
+  {{#t}}pages.someone-else-check-details.tables.other-person.nationality{{/t}}
+  {{changed-person-nationality}}
+
+  {{#t}}pages.someone-else-check-details.tables.other-person.id-number{{/t}}
+  {{changed-person-id-number}}
+
+
+  {{#t}}pages.someone-else-check-details.tables.personal-details.title{{/t}}
+
+  {{#contact-address-street}}
+  {{#t}}pages.check-details.table.headers.contact-address{{/t}}
+  {{contact-address-street}},
+  {{contact-address-town}},
+  {{#contact-address-county}}
+  {{contact-address-county}},
+  {{/contact-address-county}}
+  {{contact-address-postcode}}
+  {{/contact-address-street}}
+
+  {{#t}}pages.check-details.table.headers.fullname{{/t}}
+  {{fullname}}
+
+  {{#t}}pages.check-details.table.headers.date-of-birth{{/t}}
+  {{date-of-birth-formatted}}
+
+  {{#t}}pages.check-details.table.headers.nationality{{/t}}
+  {{nationality}}
+
+  {{#passport}}
+  {{#t}}pages.check-details.table.headers.passport{{/t}}
+  {{passport}}
+  {{/passport}}
+
+  {{#phone}}
+  {{#t}}pages.check-details.table.headers.phone{{/t}}
+  {{phone}}
+  {{/phone}}
+
+  {{#email}}
+  {{#t}}pages.check-details.table.headers.email{{/t}}
+  {{email}}
+  {{/email}}
+
+  {{#org-help}}
+  Help from a {{org-type}} called {{rep-name}}
+  {{/org-help}}
+
+{{/data}}
+
+
+If you're unsure an email is from UKVI:
+ * do not reply to it or click any links
+ * forward it to phishing@homeoffice.gsi.gov.uk

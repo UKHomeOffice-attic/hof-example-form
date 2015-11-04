@@ -1,0 +1,11 @@
+{
+  "example-radio": {
+    "required": "Tell us which is your favourite superhero"
+  },
+  "example-dob": {
+    "required": "Enter the superhero's date of birth",
+    "numeric": "Date must only contain numbers",
+    "future": "The date is in the future",
+    "format": "Enter the collection date in the correct format"
+  }
+}
