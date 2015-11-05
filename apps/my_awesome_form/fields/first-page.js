@@ -31,5 +31,21 @@ module.exports = {
   'example-dob-year': {
     validate: ['numeric'],
     label: 'fields.example-dob-year.label'
+  },
+  'example-text': {
+    validate: ['required'],
+    label: 'fields.example-text.label'
+  },
+  'example-email': {
+    validate: ['required', 'email'],
+    type: 'email',
+    label: 'fields.example-email.label',
+    dependent: {
+      value: '',
+      field: 'no-email'
+    }
+  },
+  'example-checkbox': {
+    label: 'fields.example-checkbox.label'
   }
 };

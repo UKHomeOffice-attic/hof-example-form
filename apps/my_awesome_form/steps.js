@@ -13,7 +13,9 @@ module.exports = {
       'example-dob',
       'example-dob-day',
       'example-dob-month',
-      'example-dob-year'
+      'example-dob-year',
+      'example-text',
+      'example-email'
     ],
     next: '/second-page'
   }
