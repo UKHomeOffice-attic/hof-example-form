@@ -1,0 +1,41 @@
+{{<layout}}
+{{$step}}Step 2 of 3{{/step}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$header}}{{#t}}pages.second-page.header{{/t}}{{/header}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+
+<fieldset id="example-dob-group" class="panel-indent {{#errors.example-dob}}validation-error{{/errors.example-dob}}">
+    <h1>These radio buttons toggle a hidden field</h1>
+    {{#radio-group}}yes-no-radio-toggler{{/radio-group}}
+    <h1>Example toggled text input</h1>
+    <div id="example-toggled-text-div">
+        {{#input-text}}example-toggled-text{{/input-text}}
+    </div>
+</fieldset>
+
+{{#input-submit}}continue{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

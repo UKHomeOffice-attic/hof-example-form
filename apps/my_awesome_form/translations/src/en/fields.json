@@ -34,5 +34,11 @@
   },
   "example-checkbox": {
     "label": "Please tick if you like cheese"
+  },
+  "example-toggled-text": {
+    "label": "You showed me!!"
+  },
+  "example-depends-on-text": {
+    "label": "What is the name of your pet dog?"
   }
 }
