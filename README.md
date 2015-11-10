@@ -1,6 +1,6 @@
-# Project Title
+# Home Office Forms Example Form
 
-One Paragraph of project description goes here
+In order to provide a starting point for people using the home office forms toolkit this app aims to give a simple example of how to use the module. We encourage users to clone this repository in order to provide a starting point for their own forms.
 
 ## Getting Started
 
@@ -9,58 +9,30 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisities
 
 What things you need to install the software and how to install them
-
-```
-Give examples
-```
+- NodeJS
+- npm (version 3 is not yet supported, please use version 2)
+- Redis server running on the default port
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Stay what the step will be
-
-```
-Give the example
+```bash
+$ cd hof-example-form
+$ npm install
+$ npm run dev
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Go to http://localhost:8080/my-awesome-form
 
 ## Running the tests
+You will need the server running to run the cucumber tests against.
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+```bash
+$ cd acceptance_tests
+$ cucumber -r features
 ```
 
-### And coding style tests
+You will need phantomjs installed to run tests. Alternatively you can export IN_BROWSER=true to run the tests in firefox.
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* Dropwizard - Bla bla bla
-* Maven - Maybe
-* Atom - ergaerga
 
 ## Contributing
 
@@ -70,18 +42,6 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
