@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    'multiples-input': {
-        validate: ['required']
-    }
+  'multiples-input': {
+    validate: ['required']
+  }
 };
