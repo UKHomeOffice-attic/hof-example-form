@@ -25,5 +25,9 @@ Feature: I am able to navigate through my example form with the validation worki
     When I enter that my favourite multiple is 15
     And I click continue
     Then I am taken to the summary page
-    When I confirm that my details are correct
-    Then I am informed about what will happen next
+    When I click the first "Change" button
+    Then I can see the questions for the first page of the form
+    When I click continue
+    Then I am taken to the summary page
+    When I click Confirm submission
+    Then I am taken to the confirmation page

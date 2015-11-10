@@ -1,10 +1,4 @@
 {
-	"buttons": {
-		"continue": "Continue",
-		"send": "Send",
-		"change": "Change",
-		"close": "Close"
-	},
 	"fields": {
 		"example-dob": {
 			"label": "Date",
@@ -109,6 +103,13 @@
 		"multiples-input": {
 			"multipleError": "That isn't a multiple of 3, try again!"
 		}
+	},
+	"buttons": {
+		"continue": "Continue",
+		"send": "Send",
+		"change": "Change",
+		"close": "Close",
+		"Confirm": "Confirm submission"
 	},
 	"errorlist": {
 		"title": {

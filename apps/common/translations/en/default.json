@@ -3,7 +3,8 @@
 		"continue": "Continue",
 		"send": "Send",
 		"change": "Change",
-		"close": "Close"
+		"close": "Close",
+		"Confirm": "Confirm submission"
 	},
 	"errorlist": {
 		"title": {

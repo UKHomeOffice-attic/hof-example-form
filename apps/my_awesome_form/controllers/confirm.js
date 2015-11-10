@@ -2,6 +2,7 @@
 
 var util = require('util');
 var BaseController = require('../../../lib/base-controller');
+var _ = require('underscore');
 
 var ConfirmController = function ConfirmController() {
     BaseController.apply(this, arguments);

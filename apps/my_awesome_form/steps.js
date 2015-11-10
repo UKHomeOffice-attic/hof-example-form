@@ -47,6 +47,11 @@ module.exports = {
         controller: require('./controllers/confirm'),
         template: 'confirm.html',
         next: '/confirmation'
+    },
+    '/confirmation': {
+        template: 'confirmation.html',
+        backLink: false,
+        clearSession: true
     }
 }
 ;

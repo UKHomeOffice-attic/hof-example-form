@@ -61,6 +61,10 @@ When(/^I click continue$/) do
   click_button("Continue")
 end
 
+When(/^I click Confirm submission$/) do
+  click_button("Confirm submission")
+end
+
 Then(/^I am taken to the third page of the form$/) do
   expect(page).to have_content 'This page shows how to make a field mandatory depending on the answer to a previous question'
 end
@@ -87,4 +91,16 @@ end
 
 Then(/^I am presented with my custom validation errors$/) do
   expect(page).to have_content 'That isn\'t a multiple of 3, try again!'
+end
+
+Then(/^I am taken to the summary page$/) do
+  expect(page).to have_content 'This is an example of a confirmation page'
+end
+
+When(/^I click the first "Change" button$/) do
+  find_by_id('example-radio-change').click
+end
+
+Then(/^I am taken to the confirmation page$/) do
+  expect(page).to have_content 'You\'re all done, well done!'
 end
