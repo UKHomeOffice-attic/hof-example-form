@@ -1,8 +1,8 @@
 {
-  "name": "BRP",
-  "version": "0.0.0",
+  "name": "Home Office Forms (HOF) Example",
+  "version": "0.0.1",
   "main": "app.js",
-  "description": "A Home Office application for Biometric Residence Permit covering lost and stolen, error on card and delivery error services.",
+  "description": "An example of how to use the HOF package for creating forms",
   "license": "GPLv2",
   "scripts": {
     "start": "node .",
