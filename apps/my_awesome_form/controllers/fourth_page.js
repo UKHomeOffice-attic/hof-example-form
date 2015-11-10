@@ -4,14 +4,14 @@ var util = require('util');
 var BaseController = require('../../../lib/base-controller');
 var ErrorClass = require('../../../lib/base-error');
 
-var ThirdPageController = function ThirdPageController() {
+var FourthPageController = function FourthPageController() {
     this.multiplesKey = 'multiples-input';
     BaseController.apply(this, arguments);
 };
 
-util.inherits(ThirdPageController, BaseController);
+util.inherits(FourthPageController, BaseController);
 
-ThirdPageController.prototype.validateField = function validateField(keyToValidate, req) {
+FourthPageController.prototype.validateField = function validateField(keyToValidate, req) {
     function isNotMultipleOfThree(number) {
         return (number % 3) !== 0
     }
@@ -27,4 +27,4 @@ ThirdPageController.prototype.validateField = function validateField(keyToValida
     }
 };
 
-module.exports = ThirdPageController;
+module.exports = FourthPageController;
