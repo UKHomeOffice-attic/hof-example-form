@@ -1,7 +1,7 @@
 'use strict';
 
 var util = require('util');
-var controllers = require('hof-controllers');
+var controllers = require('hof').controllers;
 var DateController = controllers.date;
 
 var FirstPageController = function FirstPageController() {

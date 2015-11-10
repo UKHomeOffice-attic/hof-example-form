@@ -18,13 +18,14 @@ var hof = {
   template: require('hmpo-govuk-template'),
   Model: require('hmpo-model'),
   mixins: require('hmpo-template-mixins'),
+  controllers: require('hof-controllers'),
   i18n: require('i18n-future'),
   i18nLookup: require('i18n-lookup')
 };
 
 module.exports = hof;
 
-},{"hmpo-form-wizard":2,"hmpo-frontend-toolkit":8,"hmpo-govuk-template":2,"hmpo-model":2,"hmpo-template-mixins":2,"i18n-future":2,"i18n-lookup":2}],4:[function(require,module,exports){
+},{"hmpo-form-wizard":2,"hmpo-frontend-toolkit":8,"hmpo-govuk-template":2,"hmpo-model":2,"hmpo-template-mixins":2,"hof-controllers":2,"i18n-future":2,"i18n-lookup":2}],4:[function(require,module,exports){
 /**
  * This module adds the yellow focus border to:
  *   * labels with class block-label that are the parent element of radio buttons
