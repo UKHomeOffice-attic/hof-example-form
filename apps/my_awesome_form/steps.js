@@ -41,7 +41,12 @@ module.exports = {
         controller: require('./controllers/fourth_page'),
         template: 'fourth-page',
         fields: ['multiples-input'],
-        next: '/summary'
+        next: '/confirm'
+    },
+    '/confirm': {
+        controller: require('./controllers/confirm'),
+        template: 'confirm.html',
+        next: '/confirmation'
     }
 }
 ;

@@ -1,4 +1,10 @@
 {
+	"buttons": {
+		"continue": "Continue",
+		"send": "Send",
+		"change": "Change",
+		"close": "Close"
+	},
 	"fields": {
 		"example-dob": {
 			"label": "Date",
@@ -62,6 +68,22 @@
 		},
 		"fourth-page": {
 			"header": "This page demonstrates custom validation"
+		},
+		"confirm": {
+			"table": {
+				"headers": {
+					"example-dob": "Superhero date of birth",
+					"example-radio": "Example radio button",
+					"example-text": "Favourite colour",
+					"example-email": "Email",
+					"example-checkbox": "Example check box",
+					"yes-no-radio-toggler": "Radio toggler",
+					"example-toggled-text": "Example toggled text",
+					"yes-no-radio": "Yes no radio",
+					"example-depends-on-text": "Example depends on text",
+					"multiples-input": "Favourite multiple"
+				}
+			}
 		}
 	},
 	"validation": {
@@ -87,12 +109,6 @@
 		"multiples-input": {
 			"multipleError": "That isn't a multiple of 3, try again!"
 		}
-	},
-	"buttons": {
-		"continue": "Continue",
-		"send": "Send",
-		"change": "Change",
-		"close": "Close"
 	},
 	"errorlist": {
 		"title": {

@@ -11,5 +11,21 @@
   },
   "fourth-page": {
     "header": "This page demonstrates custom validation"
+  },
+  "confirm": {
+    "table": {
+      "headers": {
+        "example-dob": "Superhero date of birth",
+        "example-radio": "Example radio button",
+        "example-text": "Favourite colour",
+        "example-email": "Email",
+        "example-checkbox": "Example check box",
+        "yes-no-radio-toggler": "Radio toggler",
+        "example-toggled-text": "Example toggled text",
+        "yes-no-radio": "Yes no radio",
+        "example-depends-on-text": "Example depends on text",
+        "multiples-input": "Favourite multiple"
+      }
+    }
   }
 }
