@@ -1,5 +1,5 @@
 {
-  "name": "Home Office Forms (HOF) Example",
+  "name": "HOF-Example",
   "version": "0.0.1",
   "main": "app.js",
   "description": "An example of how to use the HOF package for creating forms",
@@ -34,6 +34,7 @@
     "express-partial-templates": "^0.1.0",
     "express-session": "^1.11.3",
     "hof": "0.0.2",
+    "hof-controllers": "0.0.3",
     "hogan-express-strict": "^0.5.4",
     "hogan.js": "^3.0.2",
     "jquery": "^2.1.4",
