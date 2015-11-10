@@ -17,5 +17,8 @@
   },
   "example-depends-on-text": {
     "required": "Input the name of your pet dog"
+  },
+  "multiples-input": {
+    "multipleError": "That isn't a multiple of 3, try again!"
   }
 }

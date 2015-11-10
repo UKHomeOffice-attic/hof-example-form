@@ -1,6 +1,6 @@
-Feature: I am able to navigate through my example form
+Feature: I am able to navigate through my example form with the validation working as expected
 
-  Scenario: I am able to navigate through my example form
+  Scenario: I am able to navigate through my example form with the validation working as expected
     Given I am on the start page for the form
     Then I can see the questions for the first page of the form
     When I complete the first page of the form incorrectly
@@ -19,10 +19,11 @@ Feature: I am able to navigate through my example form
     When I select the no radio button
     And I click continue
     Then I am taken to the fourth page
-    When I click continue
+    When I enter that my favourite multiple is 5
+    And I click continue
     Then I am presented with my custom validation errors
-    When I fill out the fields correctly
-    And click continue
+    When I enter that my favourite multiple is 15
+    And I click continue
     Then I am taken to the summary page
     When I confirm that my details are correct
     Then I am informed about what will happen next

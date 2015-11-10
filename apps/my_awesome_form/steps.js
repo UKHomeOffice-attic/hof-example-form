@@ -36,6 +36,12 @@ module.exports = {
             'example-depends-on-text'
         ],
         next: '/fourth-page'
+    },
+    '/fourth-page': {
+        controller: require('./controllers/fourth_page'),
+        template: 'fourth-page',
+        fields: ['multiples-input'],
+        next: '/summary'
     }
 }
 ;

@@ -41,6 +41,9 @@
 		},
 		"example-depends-on-text": {
 			"label": "What is the name of your pet dog?"
+		},
+		"multiples-input": {
+			"label": "What is your favourite multiple of 3?"
 		}
 	},
 	"journey": {
@@ -56,6 +59,9 @@
 		},
 		"third-page": {
 			"header": "This page shows how to make a field mandatory depending on the answer to a previous question"
+		},
+		"fourth-page": {
+			"header": "This page demonstrates custom validation"
 		}
 	},
 	"validation": {
@@ -77,6 +83,9 @@
 		},
 		"example-depends-on-text": {
 			"required": "Input the name of your pet dog"
+		},
+		"multiples-input": {
+			"multipleError": "That isn't a multiple of 3, try again!"
 		}
 	},
 	"buttons": {

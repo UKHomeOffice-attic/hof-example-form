@@ -8,5 +8,8 @@
   },
   "third-page": {
     "header": "This page shows how to make a field mandatory depending on the answer to a previous question"
+  },
+  "fourth-page": {
+    "header": "This page demonstrates custom validation"
   }
 }

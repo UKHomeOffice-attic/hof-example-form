@@ -80,3 +80,11 @@ end
 Then(/^I am taken to the fourth page$/) do
   expect(page).to have_content 'This page demonstrates custom validation'
 end
+
+When(/^I enter that my favourite multiple is (\d+)$/) do |num|
+  fill_in "multiples-input", :with => num
+end
+
+Then(/^I am presented with my custom validation errors$/) do
+  expect(page).to have_content 'That isn\'t a multiple of 3, try again!'
+end
