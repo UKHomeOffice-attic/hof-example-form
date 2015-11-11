@@ -14,7 +14,7 @@ util.inherits(FourthPageController, BaseController);
 
 FourthPageController.prototype.validateField = function validateField(keyToValidate, req) {
   function isNotMultipleOfThree(number) {
-    return (number % 3) !== 0
+    return (number % 3) !== 0;
   }
 
   var fieldValue = req.form.values[keyToValidate];
@@ -23,10 +23,9 @@ FourthPageController.prototype.validateField = function validateField(keyToValid
       key: this.multiplesKey,
       type: 'multipleError',
       redirect: undefined
-    })
-  } else {
-    return BaseController.prototype.validateField.call(this, keyToValidate, req);
+    });
   }
+  return BaseController.prototype.validateField.call(this, keyToValidate, req);
 };
 
 module.exports = FourthPageController;
