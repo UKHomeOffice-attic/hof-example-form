@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/UKHomeOffice/hof-example-form.svg?branch=master)](https://travis-ci.org/UKHomeOffice/hof-example-form)
+
 # Home Office Forms Example Form
 
 In order to provide a starting point for people using the home office forms toolkit this app aims to give a simple example of how to use the module. We encourage users to clone this repository in order to provide a starting point for their own forms.
