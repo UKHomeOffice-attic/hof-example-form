@@ -16,20 +16,33 @@ module.exports = {
     }]
   },
   'example-dob': {
-    validate: ['required'],
+    validate: ['required', 'numeric'],
     legend: 'fields.example-dob.legend',
     hint: 'fields.example-dob.hint'
   },
   'example-dob-day': {
-    validate: ['numeric'],
     label: 'fields.example-dob-day.label'
   },
   'example-dob-month': {
-    validate: ['numeric'],
     label: 'fields.example-dob-month.label'
   },
   'example-dob-year': {
-    validate: ['numeric'],
     label: 'fields.example-dob-year.label'
+  },
+  'example-text': {
+    validate: ['required'],
+    label: 'fields.example-text.label'
+  },
+  'example-email': {
+    validate: ['required', 'email'],
+    type: 'email',
+    label: 'fields.example-email.label',
+    dependent: {
+      value: '',
+      field: 'no-email'
+    }
+  },
+  'example-checkbox': {
+    label: 'fields.example-checkbox.label'
   }
 };

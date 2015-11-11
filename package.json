@@ -1,9 +1,13 @@
 {
-  "name": "BRP",
-  "version": "0.0.0",
+  "name": "HOF-Example",
+  "version": "0.0.1",
   "main": "app.js",
-  "description": "A Home Office application for Biometric Residence Permit covering lost and stolen, error on card and delivery error services.",
+  "description": "An example of how to use the HOF package for creating forms",
   "license": "GPLv2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UKHomeOffice/hof-example-form/"
+  },
   "scripts": {
     "start": "node .",
     "dev": "parallelshell 'NODE_ENV=development nodemon .' 'npm run watch:scss' 'npm run watch:js' 'npm run watch:translations'",
@@ -33,7 +37,7 @@
     "express": "^4.12.4",
     "express-partial-templates": "^0.1.0",
     "express-session": "^1.11.3",
-    "hof": "0.0.2",
+    "hof": "1.0.4",
     "hogan-express-strict": "^0.5.4",
     "hogan.js": "^3.0.2",
     "jquery": "^2.1.4",

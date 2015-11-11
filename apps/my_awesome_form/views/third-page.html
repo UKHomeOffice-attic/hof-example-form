@@ -1,0 +1,38 @@
+{{<layout}}
+{{$step}}Step 3 of 3{{/step}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$header}}{{#t}}pages.third-page.header{{/t}}{{/header}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+
+<h1>Just a normal radio button</h1>
+{{#radio-group}}yes-no-radio{{/radio-group}}
+<h1>This text input is required only if the radio button has been answered yes</h1>
+<p>TIP! Use this in conjunction with the toggle feature :)</p>
+{{#input-text}}example-depends-on-text{{/input-text}}
+
+{{#input-submit}}continue{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}

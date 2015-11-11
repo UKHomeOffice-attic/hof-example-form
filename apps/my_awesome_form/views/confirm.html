@@ -1,0 +1,112 @@
+{{<layout}}
+{{$step}}Step 3 of 3{{/step}}
+
+{{$journeyHeader}}
+{{#t}}journey.header{{/t}}
+{{/journeyHeader}}
+
+{{$validationSummary}}
+{{> partials-validation-summary}}
+{{/validationSummary}}
+
+{{$propositionHeader}}
+{{> partials-navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+{{<partials-form}}
+
+{{$form}}
+
+
+<h1>This is an example of a confirmation page</h1>
+<p>You will see on the controller for this page that you are able to specify what to do with the data</p>
+
+<table id="summary" class="table-details">
+    <thead>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-radio{{/t}}</td>
+        <td>
+            {{values.example-radio}}
+        </td>
+        <td><a href="first-page/edit#example-radio" class="button" id="example-radio-change">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-dob{{/t}}</td>
+        <td>
+            {{values.example-dob-formatted}}
+        </td>
+        <td><a href="first-page/edit#example-dob" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-text{{/t}}</td>
+        <td>
+            {{values.example-text}}
+        </td>
+        <td><a href="first-page/edit#example-text" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-email{{/t}}</td>
+        <td>
+            {{values.example-email}}
+        </td>
+        <td><a href="first-page/edit#example-email" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-checkbox{{/t}}</td>
+        <td>
+            {{values.example-checkbox}}
+        </td>
+        <td><a href="first-page/edit#example-checkbox" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.yes-no-radio-toggler{{/t}}</td>
+        <td>
+            {{values.yes-no-radio-toggler}}
+        </td>
+        <td><a href="second-page/edit#yes-no-radio-toggler" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-toggled-text{{/t}}</td>
+        <td>
+            {{values.example-toggled-text}}
+        </td>
+        <td><a href="second-page/edit#example-toggled-text" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.yes-no-radio{{/t}}</td>
+        <td>
+            {{values.yes-no-radio}}
+        </td>
+        <td><a href="third-page/edit#yes-no-radio" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.example-depends-on-text{{/t}}</td>
+        <td>
+            {{values.example-depends-on-text}}
+        </td>
+        <td><a href="third-page/edit#example-depends-on-text" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    <tr>
+        <td>{{#t}}pages.confirm.table.headers.multiples-input{{/t}}</td>
+        <td>
+            {{values.multiples-input}}
+        </td>
+        <td><a href="fourth-page/edit#multiples-input" class="button">{{#t}}buttons.change{{/t}}</a></td>
+    </tr>
+    </tbody>
+</table>
+
+{{#input-submit}}Confirm submission{{/input-submit}}
+{{/form}}
+
+{{/partials-form}}
+
+{{/content}}
+
+{{/layout}}
