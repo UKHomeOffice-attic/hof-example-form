@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.12"
+
+services:
+  - redis-server
+
+cache:
+  directories:
+    - node_modules
+
+script: "npm run test:ci && npm run sass; NODE_ENV='ci' npm start& npm run test:acceptance"
