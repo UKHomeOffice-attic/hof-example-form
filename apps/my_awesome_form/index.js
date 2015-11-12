@@ -7,7 +7,7 @@ var i18nFuture = hof.i18n;
 var router = require('express').Router();
 var path = require('path');
 var _ = require('underscore');
-var controllers = require('hof-controllers');
+var controllers = require('hof').controllers;
 var BaseController = controllers.base;
 
 var fields = _.extend({}, require('../common/fields/'), require('./fields/'));
