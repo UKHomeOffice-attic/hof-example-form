@@ -2,7 +2,7 @@
 
 # Home Office Forms Example Form
 
-In order to provide a starting point for people using the home office forms toolkit this app aims to give a simple example of how to use the module. We encourage users to clone this repository in order to provide a starting point for their own forms.
+In order to provide a starting point for people using the [home office forms toolkit](https://github.com/UKHomeOffice/hof) this app aims to give a simple example of how to use the module. We encourage users to clone this repository in order to provide a starting point for their own forms.
 
 ## Getting Started
 
