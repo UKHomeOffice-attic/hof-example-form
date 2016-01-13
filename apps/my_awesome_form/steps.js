@@ -20,7 +20,6 @@ module.exports = {
     next: '/second-page'
   },
   '/second-page': {
-    controller: require('./controllers/second-page'),
     template: 'second-page',
     fields: [
       'yes-no-radio-toggler',
@@ -29,7 +28,6 @@ module.exports = {
     next: '/third-page'
   },
   '/third-page': {
-    controller: require('./controllers/third-page'),
     template: 'third-page',
     fields: [
       'yes-no-radio',
