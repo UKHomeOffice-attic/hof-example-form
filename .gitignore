@@ -1,3 +1,7 @@
+# Compiled files
+apps/**/translations/en
+public
+
 # Logs
 logs
 *.log
@@ -26,11 +30,10 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# IntelliJ files
-.idea/
-
 # Gemfile lock
 Gemfile.lock
 
-# Compile translations
-apps/**/translations/en
+# Editor files
+.idea/
+*~
+*.swp
