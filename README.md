@@ -30,6 +30,7 @@ You will need the server running to run the cucumber tests against.
 
 ```bash
 $ cd acceptance_tests
+$ bundle install
 $ cucumber -r features
 ```
 
