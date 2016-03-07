@@ -39,6 +39,9 @@ app.use(function setBaseUrl(req, res, next) {
   next();
 });
 
+// Trust proxy for secure cookies
+app.set('trust proxy', 1);
+
 /*************************************/
 /******* Redis session storage *******/
 /*************************************/
@@ -78,25 +81,18 @@ function secureCookies(req, res, next) {
   next();
 }
 
-function initSession(req, res, next) {
-  session({
-    store: redisStore,
-    cookie: {
-      secure: (req.protocol === 'https')
-    },
-    key: 'hmbrp.sid',
-    secret: config.session.secret,
-    resave: true,
-    saveUninitialized: true
-  })(req, res, next);
-}
-
 app.use(require('cookie-parser')(config.session.secret));
 app.use(secureCookies);
-app.use(initSession);
-
-// apps
-app.use(require('./apps/my_awesome_form/'));
+app.use(session({
+  store: redisStore,
+  cookie: {
+    secure: (config.env === 'development' || config.env === 'ci') ? false : true
+  },
+  key: 'hof-example-form.sid',
+  secret: config.session.secret,
+  resave: true,
+  saveUninitialized: true
+}));
 
 app.get('/cookies', function renderCookies(req, res) {
   res.render('cookies');
