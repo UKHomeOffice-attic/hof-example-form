@@ -44,8 +44,20 @@ app.use(function setBaseUrl(req, res, next) {
 /*************************************/
 var client = redis.createClient(config.redis.port, config.redis.host);
 
+client.on('connecting', function redisConnecting() {
+  logger.info('Connecting to redis');
+});
+
+client.on('connect', function redisConnected() {
+  logger.info('Connected to redis');
+});
+
+client.on('reconnecting', function redisReconnecting() {
+  logger.info('Reconnecting to redis');
+});
+
 client.on('error', function clientErrorHandler(e) {
-  throw e;
+  logger.error(e);
 });
 
 var redisStore = new RedisStore({
