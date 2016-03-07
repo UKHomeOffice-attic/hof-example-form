@@ -97,9 +97,16 @@ app.use(session({
 app.get('/cookies', function renderCookies(req, res) {
   res.render('cookies');
 });
+
 app.get('/terms-and-conditions', function renderTerms(req, res) {
   res.render('terms');
 });
+
+// use the hof middleware
+app.use(require('hof').middleware());
+
+// apps
+app.use(require('./apps/my_awesome_form/'));
 
 // errors
 app.use(require('./errors/'));
