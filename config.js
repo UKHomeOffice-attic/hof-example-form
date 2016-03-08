@@ -12,8 +12,8 @@ module.exports = {
     ttl: process.env.SESSION_TTL || 1200 /* 20 mins */
   },
   redis: {
-    port: process.env.REDIS_PORT || 6379,
-    host: process.env.REDIS_HOST || '127.0.0.1'
+    port: process.env.REDIS_PORT_6379_TCP_PORT || process.env.REDIS_PORT || 6379,
+    host: process.env.REDIS_PORT_6379_TCP_ADDR || process.env.REDIS_HOST || '127.0.0.1'
   },
   email: {
     caseworker: {

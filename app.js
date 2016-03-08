@@ -15,7 +15,7 @@ if (config.env !== 'ci') {
   app.use(churchill(logger));
 }
 
-if (config.env === 'development') {
+if (config.env === 'development' || config.env === 'ci' || config.env === 'docker-compose') {
   app.use('/public', express.static(path.resolve(__dirname, './public')));
 }
 
@@ -39,13 +39,28 @@ app.use(function setBaseUrl(req, res, next) {
   next();
 });
 
+// Trust proxy for secure cookies
+app.set('trust proxy', 1);
+
 /*************************************/
 /******* Redis session storage *******/
 /*************************************/
 var client = redis.createClient(config.redis.port, config.redis.host);
 
+client.on('connecting', function redisConnecting() {
+  logger.info('Connecting to redis');
+});
+
+client.on('connect', function redisConnected() {
+  logger.info('Connected to redis');
+});
+
+client.on('reconnecting', function redisReconnecting() {
+  logger.info('Reconnecting to redis');
+});
+
 client.on('error', function clientErrorHandler(e) {
-  throw e;
+  logger.error(e);
 });
 
 var redisStore = new RedisStore({
@@ -66,32 +81,32 @@ function secureCookies(req, res, next) {
   next();
 }
 
-function initSession(req, res, next) {
-  session({
-    store: redisStore,
-    cookie: {
-      secure: (req.protocol === 'https')
-    },
-    key: 'hmbrp.sid',
-    secret: config.session.secret,
-    resave: true,
-    saveUninitialized: true
-  })(req, res, next);
-}
-
 app.use(require('cookie-parser')(config.session.secret));
 app.use(secureCookies);
-app.use(initSession);
-
-// apps
-app.use(require('./apps/my_awesome_form/'));
+app.use(session({
+  store: redisStore,
+  cookie: {
+    secure: (config.env === 'development' || config.env === 'ci' || config.env === 'docker-compose') ? false : true
+  },
+  key: 'hof-example-form.sid',
+  secret: config.session.secret,
+  resave: true,
+  saveUninitialized: true
+}));
 
 app.get('/cookies', function renderCookies(req, res) {
   res.render('cookies');
 });
+
 app.get('/terms-and-conditions', function renderTerms(req, res) {
   res.render('terms');
 });
+
+// use the hof middleware
+app.use(require('hof').middleware());
+
+// apps
+app.use(require('./apps/my_awesome_form/'));
 
 // errors
 app.use(require('./errors/'));
