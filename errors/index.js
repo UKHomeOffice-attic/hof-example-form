@@ -8,7 +8,7 @@ var config = require('../config');
 var logger = require('../lib/logger');
 
 /*eslint no-unused-vars: 0*/
-module.exports = function errorHandler(err, req, res, next) {
+module.exports = function errorHandler(err, req, res) {
   /*eslint no-unused-vars: 1*/
   var content = {};
 
@@ -28,7 +28,7 @@ module.exports = function errorHandler(err, req, res, next) {
   res.render(err.template, {
     error: err,
     content: content,
-    showStack: config.env === 'development',
+    showStack: (config.env === 'development' || config.env === 'docker-compose'),
     startLink: req.path.replace(/^\/([^\/]*).*$/, '$1')
   });
 };
