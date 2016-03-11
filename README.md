@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 - NodeJS
-- npm (version 3 is not yet supported, please use version 2)
+- npm
 - Redis server running on the default port
 
 ### Installing
