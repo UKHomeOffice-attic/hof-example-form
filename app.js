@@ -108,6 +108,8 @@ app.use(require('hof').middleware());
 // apps
 app.use(require('./apps/my_awesome_form/'));
 
+app.use(require('./middleware/not-found')());
+
 // errors
 app.use(require('./errors/'));
 
