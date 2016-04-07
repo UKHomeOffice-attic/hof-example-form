@@ -2,9 +2,9 @@ source "https://rubygems.org"
 
 gem 'cucumber'
 gem 'capybara'
-gem 'poltergeist'
 gem 'rspec'
-gem 'phantomjs'
+gem 'poltergeist'
+gem 'phantomjs', :group => :test
 gem 'show_me_the_cookies'
 gem 'yard-cucumber'
 gem 'selenium-webdriver', '2.45.0'

@@ -6,8 +6,7 @@ var path = require('path');
 var logger = require('./lib/logger');
 var churchill = require('churchill');
 var session = require('express-session');
-var redis = require('redis');
-var RedisStore = require('connect-redis-crypto')(session);
+
 var config = require('./config');
 require('moment-business');
 
@@ -45,6 +44,8 @@ app.set('trust proxy', 1);
 /*************************************/
 /******* Redis session storage *******/
 /*************************************/
+var redis = require('redis');
+var RedisStore = require('connect-redis-crypto')(session);
 var client = redis.createClient(config.redis.port, config.redis.host);
 
 client.on('connecting', function redisConnecting() {
