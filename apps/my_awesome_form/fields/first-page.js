@@ -16,17 +16,19 @@ module.exports = {
     }]
   },
   'example-dob': {
-    validate: ['required', 'numeric'],
     legend: 'fields.example-dob.legend',
     hint: 'fields.example-dob.hint'
   },
   'example-dob-day': {
+    validate: ['required', 'numeric'],
     label: 'fields.example-dob-day.label'
   },
   'example-dob-month': {
+    validate: ['required', 'numeric'],
     label: 'fields.example-dob-month.label'
   },
   'example-dob-year': {
+    validate: ['required', 'numeric'],
     label: 'fields.example-dob-year.label'
   },
   'example-text': {
