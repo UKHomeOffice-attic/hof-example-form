@@ -4,7 +4,7 @@ gem 'cucumber'
 gem 'capybara'
 gem 'rspec'
 gem 'poltergeist'
-gem 'phantomjs', :group => :test
+gem 'phantomjs', '1.9.8.0'
 gem 'show_me_the_cookies'
 gem 'yard-cucumber'
 gem 'selenium-webdriver', '2.45.0'
