@@ -36,6 +36,12 @@
   "example-checkbox": {
     "label": "Please tick if you like cheese"
   },
+  "yes-no-radio-toggler": {
+    "legend": "Select \"Yes\" to show the hidden field, or \"No\" to hide it"
+  },
+  "yes-no-radio": {
+    "legend": "Select \"Yes\" if you want to make the text field below mandatory"
+  },
   "example-toggled-text": {
     "label": "You showed me!!"
   },

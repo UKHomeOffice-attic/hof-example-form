@@ -15,10 +15,17 @@
     "required": "Enter an email address",
     "email": "The email address isn't valid, enter a valid email address"
   },
+  "yes-no-radio-toggler": {
+    "required": "Please select Yes or No"
+  },
+  "yes-no-radio": {
+    "required": "Please select Yes or No"
+  },
   "example-depends-on-text": {
     "required": "Input the name of your pet dog"
   },
   "multiples-input": {
+    "required": "This field is required",
     "multipleError": "That isn't a multiple of 3, try again!"
   }
 }
