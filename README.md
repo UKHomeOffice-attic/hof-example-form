@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/UKHomeOffice/hof-example-form.svg?branch=master)](https://travis-ci.org/UKHomeOffice/hof-example-form)
+[![Build Status](https://travis-ci.org/UKHomeOffice/hof-example-form.svg?branch=master)](https://travis-ci.org/UKHomeOffice/hof-example-form)[![Dependencies](https://david-dm.org/UKHomeOffice/hof-example-form.svg)](https://david-dm.org/UKHomeOffice/hof-example-form)
 
 # Home Office Forms Example Form
 
@@ -43,7 +43,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## License
 
