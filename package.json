@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "node .",
-    "dev": "parallelshell 'NODE_ENV=development nodemon .' 'npm run watch:scss' 'npm run watch:js' 'npm run watch:translations'",
+    "dev": "npm-run-all --parallel watch:app watch:scss watch:js watch:translations",
+    "watch:app": "NODE_ENV=development nodemon .",
     "watch:scss": "nodemon -e scss -x 'npm run sass'",
     "watch:js": "nodemon --watch assets/js -x 'npm run browserify'",
     "watch:translations": "nodemon --watch apps/my_awesome_form/translations/src -x 'npm run hof-transpile'",
@@ -22,7 +23,7 @@
     "copy:images": "cp -r ./assets/images ./public/",
     "style": "jscs **/*.js --config=./.jscsrc.json",
     "quality": "plato -r -x 'node_modules|reports|test' -d reports/plato .",
-    "sass": "./node_modules/node-sass/bin/node-sass ./assets/scss/app.scss ./public/css/app.css --include-path ./node_modules",
+    "sass": "node-sass ./assets/scss/app.scss ./public/css/app.css --include-path ./node_modules",
     "create:public": "mkdir -p ./public/js ./public/css ./public/images",
     "hof-transpile": "hof-transpiler ./apps/**/translations/src -w --shared ./apps/common/translations/src",
     "postinstall": "npm run create:public; npm run sass; npm run browserify; npm run copy:images; npm run hof-transpile"
@@ -65,7 +66,7 @@
     "mocha-junit-reporter": "^1.4.0",
     "mocha-multi": "^0.7.1",
     "nodemon": "^1.9.0",
-    "parallelshell": "^1.1.1",
+    "npm-run-all": "^1.7.0",
     "plato": "^1.5.0",
     "pre-commit": "^1.0.10",
     "proxyquire": "^1.5.0",
