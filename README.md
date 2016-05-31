@@ -11,9 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisities
 
 What things you need to install the software and how to install them
-- NodeJS
-- npm
-- Redis server running on the default port
+- [NodeJS](https://nodejs.org/en/)
+- npm (bundled with node)
+- [Redis server](http://redis.io/topics/quickstart) running on the default port
 
 ### Installing
 
