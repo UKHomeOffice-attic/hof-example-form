@@ -38,3 +38,6 @@ Gemfile.lock
 *~
 *.swp
 .DS_Store
+
+# Redis dumps
+dump.rdb
