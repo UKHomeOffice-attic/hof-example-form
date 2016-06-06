@@ -1,12 +1,11 @@
 language: node_js
 node_js:
-  - "5"
-  - "4"
-  - "4.2"
-  - "0.12"
+  - "6"
+  - "4.4.2"
 
 before_install:
   - rvm install 2.2.2
+  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 
 services:
   - redis-server
