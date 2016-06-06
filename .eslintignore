@@ -2,7 +2,4 @@ node_modules
 reports
 public/js/bundle.js
 acceptance_tests
-dist/js/bundle.js
-acceptance_tests
-doc/**/*
 apps/**/translations/**/default.json
