@@ -45,7 +45,7 @@
     "moment": "^2.10.3",
     "moment-business": "^2.0.0",
     "node-sass": "3.4.2",
-    "nodemailer": "^1.4.0",
+    "nodemailer": "^2.4.2",
     "nodemailer-smtp-transport": "^1.0.3",
     "nodemailer-stub-transport": "^1.0.0",
     "redis": "^0.12.1",
