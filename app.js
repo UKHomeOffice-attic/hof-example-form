@@ -104,7 +104,7 @@ app.get('/terms-and-conditions', function renderTerms(req, res) {
 });
 
 // use the hof middleware
-app.use(require('hof').middleware());
+app.use(require('hof').middleware.cookies());
 
 // apps
 app.use(require('./apps/my_awesome_form/'));
@@ -112,7 +112,11 @@ app.use(require('./apps/my_awesome_form/'));
 app.use(require('./middleware/not-found')());
 
 // errors
-app.use(require('./errors/'));
+app.use(require('hof').middleware.errors({
+  logger: require('./lib/logger'),
+  translate: require('hof').i18n.translate,
+  debug: config.env === 'development'
+}));
 
 
 /*eslint camelcase: 0*/
