@@ -21,15 +21,25 @@ These instructions will get you a copy of the project up and running on your loc
 - [NodeJS](https://nodejs.org/en/) - version 4 and up.
 - npm version 3 (bundled with node 5 and up)
 - [Redis server](http://redis.io/topics/quickstart) running on the default port
-- A healthy understanding of Node.JS
+- A basic understanding of Node.JS
 
 ### Installing
 
-1. Clone this repository: `git clone git@github.com:UKHomeOffice/hof-example-form`
+Clone this repository: `git clone git@github.com:UKHomeOffice/hof-example-form`
 
-2. Delete the commit history: `rm -rf .git`
+Install the dependencies required to run the service and start the server in 'development' mode:
+  ```
+  $ npm install
+  $ npm run dev
+  ```
 
-3. Reconstruct the Git repo with only the current content:
+Visit: [http://localhost:8080/my-awesome-form](http://localhost:8080/my-awesome-form)
+
+__If you are going to use this example form as a starting point for your own service, we encourage you to follow the next fews steps:__
+
+1. Delete the commit history: `rm -rf .git`
+
+2. Reconstruct the Git repo with only the current content:
 
   ```
   git init
@@ -44,14 +54,6 @@ These instructions will get you a copy of the project up and running on your loc
   git push -u --force origin master
   ```
 
-5. Get the dependencies and start the service:
-  ```
-  $ npm install
-  $ npm run dev
-  ```
-
-6. Visit: [http://localhost:8080/my-awesome-form](http://localhost:8080/my-awesome-form)
-
 ## Running the tests
 
 ### Unit tests
@@ -60,7 +62,6 @@ $ npm run test
 ```
 
 ### Functional tests
-You will need the server running to run the acceptance tests
 
 ```bash
 $ npm run test:acceptance
