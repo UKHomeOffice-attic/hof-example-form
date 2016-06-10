@@ -118,7 +118,6 @@ app.use(require('hof').middleware.errors({
   debug: config.env === 'development'
 }));
 
-
 /*eslint camelcase: 0*/
 app.listen(config.port, config.listen_host);
 /*eslint camelcase: 1*/
