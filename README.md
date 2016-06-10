@@ -8,9 +8,7 @@ This is an example of a service built with [Home Office Forms](https://github.co
 
 This is not the only way to configure your HOF service. This service uses a typical Node.JS, Express architecture, with an entry point named `app.js`, which is where the majority of the set up occurs.
 
-The specifics of a form are configured in `apps/`, this is where views, controllers, translations and the steps and fields are defined for each form journey (spolier: there is only one at the moment).
-
-If you wish to use this as a starting point from which to build your own form service, we encourge you to delete the commit history after cloning this repository.
+The specifics of a form are configured in `apps/`, this is where views, controllers, translations and the steps and fields are defined for each form journey (spoiler: there is only one at the moment).
 
 For more info see the [HOF documentation](https://github.com/UKHomeOffice/hof/blob/master/documentation/index.md) or [join the discussion](https://ukgovernmentdigital.slack.com/messages/hof/)
 
@@ -27,14 +25,32 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-```bash
-$ git clone git@github.com:UKHomeOffice/hof-example-form.git
-$ cd hof-example-form
-$ npm install
-$ npm run dev
-```
+1. Clone this repository: `git clone git@github.com:UKHomeOffice/hof-example-form`
 
-Visit: [http://localhost:8080/my-awesome-form](http://localhost:8080/my-awesome-form)
+2. Delete the commit history: `rm -rf .git`
+
+3. Reconstruct the Git repo with only the current content:
+
+  ```
+  git init
+  git add .
+  git commit -m "Initial commit"
+  ```
+
+4. Set the remote origin:
+
+  ```
+  git remote add origin <github-uri>
+  git push -u --force origin master
+  ```
+
+5. Get the dependencies and start the service:
+  ```
+  $ npm install
+  $ npm run dev
+  ```
+
+6. Visit: [http://localhost:8080/my-awesome-form](http://localhost:8080/my-awesome-form)
 
 ## Running the tests
 
