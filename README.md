@@ -2,44 +2,76 @@
 
 # Home Office Forms Example Form
 
-In order to provide a starting point for people using the [home office forms toolkit](https://github.com/UKHomeOffice/hof) this app aims to give a simple example of how to use the module. We encourage users to clone this repository in order to provide a starting point for their own forms.
+This is an example of a service built with [Home Office Forms](https://github.com/UKHomeOffice/hof), A.K.A HOF. It intends to highlight many of the features available from HOF, but is not exhaustive.
+
+## Items of Note
+
+This is not the only way to configure your HOF service. This service uses a typical Node.JS, Express architecture, with an entry point named `app.js`, which is where the majority of the set up occurs.
+
+The specifics of a form are configured in `apps/`, this is where views, controllers, translations and the steps and fields are defined for each form journey (spoiler: there is only one at the moment).
+
+For more info see the [HOF documentation](https://github.com/UKHomeOffice/hof/blob/master/documentation/index.md) or [join the discussion](https://ukgovernmentdigital.slack.com/messages/hof/)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisities
 
-What things you need to install the software and how to install them
-- [NodeJS](https://nodejs.org/en/)
-- npm (bundled with node)
+- [NodeJS](https://nodejs.org/en/) - version 4 and up.
+- npm version 3 (bundled with node 5 and up)
 - [Redis server](http://redis.io/topics/quickstart) running on the default port
+- A basic understanding of Node.JS
 
 ### Installing
 
-```bash
-$ cd hof-example-form
-$ npm install
-$ npm run dev
-```
+Clone this repository: `git clone git@github.com:UKHomeOffice/hof-example-form`
 
-Go to http://localhost:8080/my-awesome-form
+Install the dependencies required to run the service and start the server in 'development' mode:
+  ```
+  $ npm install
+  $ npm run dev
+  ```
+
+Visit: [http://localhost:8080/my-awesome-form](http://localhost:8080/my-awesome-form)
+
+__If you are going to use this example form as a starting point for your own service, we encourage you to follow the next fews steps:__
+
+1. Delete the commit history: `rm -rf .git`
+
+2. Reconstruct the Git repo with only the current content:
+
+  ```
+  git init
+  git add .
+  git commit -m "Initial commit"
+  ```
+
+4. Set the remote origin:
+
+  ```
+  git remote add origin <github-uri>
+  git push -u --force origin master
+  ```
 
 ## Running the tests
-You will need the server running to run the cucumber tests against.
 
+### Unit tests
 ```bash
-$ cd acceptance_tests
-$ bundle install
-$ cucumber -r features
+$ npm run test
 ```
 
-You will need phantomjs installed to run tests. Alternatively you can export IN_BROWSER=true to run the tests in firefox.
+### Functional tests
 
+```bash
+$ npm run test:acceptance
+```
+
+It's worth glancing at the `scripts` in `package.json` to see what's happening
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+We welcome contributions, especially if you have a new "app" to add to `apps/`, but we must insist you first [read the our contribution docs](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
