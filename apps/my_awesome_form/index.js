@@ -1,28 +1,30 @@
 'use strict';
 
-var hof = require('hof');
-var wizard = hof.wizard;
-var mixins = hof.mixins;
-var i18nFuture = hof.i18n;
-var router = require('express').Router();
-var path = require('path');
-var _ = require('underscore');
-var controllers = require('hof').controllers;
-var BaseController = controllers.base;
+const path = require('path');
+const _ = require('lodash');
+const hof = require('hof');
+const router = require('express').Router();
+const wizard = hof.wizard;
+const mixins = hof.mixins;
+const i18nFuture = hof.i18n;
+const deepTranslate = hof.middleware.deepTranslate;
+const BaseController = hof.controllers.base;
+const fields = _.cloneDeep(require('./fields'));
+const steps = _.cloneDeep(require('./steps'));
 
-var fields = _.extend({}, require('../common/fields/'), require('./fields/'));
-var i18n = i18nFuture({
+const i18n = i18nFuture({
   path: path.resolve(__dirname, './translations/__lng__/__ns__.json')
 });
 
-router.use(mixins(fields, {
+router.use(deepTranslate({
   translate: i18n.translate.bind(i18n)
 }));
 
-router.use('/my-awesome-form/', wizard(require('./steps'), fields, {
+router.use(mixins(fields));
+
+router.use('/my-awesome-form/', wizard(steps, fields, {
   controller: BaseController,
   templatePath: path.resolve(__dirname, 'views'),
-  translate: i18n.translate.bind(i18n),
   params: '/:action?'
 }));
 
