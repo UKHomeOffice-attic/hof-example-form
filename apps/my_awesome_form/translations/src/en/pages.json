@@ -13,6 +13,22 @@
   "fourth-page": {
     "header": "This page demonstrates custom validation"
   },
+  "fifth-page": {
+    "header": "Automatically rendering fields",
+    "description": "A step's 'fields' are exposed to the template so they can be looped over. As long as a mixin property is defined in the field config, these can be automatically rendered within the loop using the renderField lambda."
+  },
+  "sixth-page": {
+    "header": "Conditional Translations"
+  },
+  "seventh-page": {
+    "header": {
+      "language-radio": {
+        "en": "Hello!",
+        "fr": "Bonjour!",
+        "de": "Guten Tag!"
+      }
+    }
+  },
   "confirm": {
     "table": {
       "headers": {

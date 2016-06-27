@@ -1,0 +1,11 @@
+{{<partials-page}}
+  {{$page-content}}
+    {{#description}}
+      <p>{{#t}}pages.{{step}}.description{{/t}}</p>
+    {{/description}}
+    {{#fields}}
+      {{#renderField}}{{/renderField}}
+    {{/fields}}
+    {{#input-submit}}continue{{/input-submit}}
+  {{/page-content}}
+{{/partials-page}}

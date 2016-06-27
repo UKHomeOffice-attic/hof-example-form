@@ -45,10 +45,47 @@
   "example-toggled-text": {
     "label": "You showed me!!"
   },
+  "child-toggler": {
+    "legend": "Toggled element as child of radio"
+  },
+  "first-toggled-child": {
+    "label": "Pass a field mixin",
+    "hint": "The mixin will be shown in an indented panel"
+  },
+  "second-toggled-child": {
+    "label": "Pass a mustache template string to show custom content"
+  },
+  "third-toggled-child": {
+    "label": "Pass a custom partial to render as child",
+    "hint": "use 'partials/partial-name' to specify a partial"
+  },
   "example-depends-on-text": {
     "label": "What is the name of your pet dog?"
   },
   "multiples-input": {
     "label": "What is your favourite multiple of 3?"
+  },
+  "auto-text": {
+    "label": "This field was rendered automatically from the field config"
+  },
+  "auto-radio": {
+    "legend": "A 'mixin' property needs to be defined in field config"
+  },
+  "auto-textarea": {
+    "label": "Textarea",
+    "hint": "Textareas strip internal whitespace by default, if you want to preserve line-breaks then you can pass 'ignore-defaults': true in field config"
+  },
+  "language-radio": {
+    "legend": "The content on the next page will change depending on which option you select on this step"
+  },
+  "name-text": {
+    "label": {
+      "language-radio": {
+        "en": "What is your name?",
+        "fr": "Comment vous appelez-vous?",
+        "de": "Wie lautet dein Name?"
+      },
+      "default": "You didn't select a language!"
+    }
   }
 }

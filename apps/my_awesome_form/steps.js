@@ -23,7 +23,8 @@ module.exports = {
   '/second-page': {
     fields: [
       'yes-no-radio-toggler',
-      'example-toggled-text'
+      'example-toggled-text',
+      'child-toggler'
     ],
     next: '/third-page'
   },
@@ -37,7 +38,40 @@ module.exports = {
   '/fourth-page': {
     controller: require('./controllers/fourth-page'),
     fields: ['multiples-input'],
-    next: '/confirm'
+    next: '/fifth-page'
+  },
+  '/fifth-page': {
+    template: 'step',
+    fields: [
+      'auto-text',
+      'auto-radio',
+      'auto-textarea'
+    ],
+    next: '/sixth-page',
+    locals: {
+      step: 'fifth-page',
+      description: true
+    }
+  },
+  '/sixth-page': {
+    template: 'step',
+    fields: [
+      'language-radio'
+    ],
+    next: '/seventh-page',
+    locals: {
+      step: 'sixth-page'
+    }
+  },
+  '/seventh-page': {
+    template: 'step',
+    fields: [
+      'name-text'
+    ],
+    next: '/confirm',
+    locals: {
+      step: 'seventh-page'
+    }
   },
   '/confirm': {
     controller: require('./controllers/confirm'),
