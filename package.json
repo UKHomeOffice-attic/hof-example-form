@@ -4,6 +4,10 @@
   "main": "app.js",
   "description": "An example of how to use the HOF package for creating forms",
   "license": "GPLv2",
+  "engines": {
+    "node": ">=4 <6",
+    "npm": ">=3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/UKHomeOffice/hof-example-form/"
