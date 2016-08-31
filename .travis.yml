@@ -5,6 +5,7 @@ node_js:
 
 before_install:
   - rvm install 2.2.2
+  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 
 services:
   - redis-server
