@@ -46,7 +46,7 @@
     "hogan-express-strict": "^0.5.4",
     "jquery": "^2.1.4",
     "moment": "^2.10.3",
-    "moment-business": "^2.0.0",
+    "moment-business": "^3.0.1",
     "node-sass": "^3.7.0",
     "nodemailer": "^1.4.0",
     "nodemailer-smtp-transport": "^1.0.3",
