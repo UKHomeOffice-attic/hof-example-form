@@ -54,7 +54,7 @@
     "redis": "^0.12.1",
     "typeahead.js-browserify": "^1.0.5",
     "underscore": "^1.8.3",
-    "winston": "^1.0.1"
+    "winston": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
