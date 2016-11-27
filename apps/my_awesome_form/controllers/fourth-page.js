@@ -1,31 +1,28 @@
 'use strict';
 
-var util = require('util');
-var controllers = require('hof').controllers;
-var BaseController = controllers.base;
-var ErrorController = controllers.error;
+const controllers = require('hof').controllers;
+const BaseController = controllers.base;
+const ErrorController = controllers.error;
 
-var FourthPageController = function FourthPageController() {
-  this.multiplesKey = 'multiples-input';
-  BaseController.apply(this, arguments);
-};
-
-util.inherits(FourthPageController, BaseController);
-
-FourthPageController.prototype.validateField = function validateField(keyToValidate, req) {
-  function isNotMultipleOfThree(number) {
-    return (number % 3) !== 0;
+module.exports = class FourthPageController extends BaseController {
+  constructor(options) {
+    super(options);
+    this.multiplesKey = 'multiples-input';
   }
 
-  var fieldValue = req.form.values[keyToValidate];
-  if (keyToValidate === this.multiplesKey && isNotMultipleOfThree(fieldValue)) {
-    return new ErrorController(this.multiplesKey, {
-      key: this.multiplesKey,
-      type: 'multipleError',
-      redirect: undefined
-    });
-  }
-  return BaseController.prototype.validateField.call(this, keyToValidate, req);
-};
+  validateField(keyToValidate, req) {
+    function isNotMultipleOfThree(number) {
+      return (number % 3) !== 0;
+    }
 
-module.exports = FourthPageController;
+    const fieldValue = req.form.values[keyToValidate];
+    if (keyToValidate === this.multiplesKey && isNotMultipleOfThree(fieldValue)) {
+      return new ErrorController(this.multiplesKey, {
+        key: this.multiplesKey,
+        type: 'multipleError',
+        redirect: undefined
+      });
+    }
+    return super.validateField(keyToValidate, req);
+  }
+};

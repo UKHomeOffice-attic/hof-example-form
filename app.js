@@ -41,9 +41,7 @@ app.use(function setBaseUrl(req, res, next) {
 // Trust proxy for secure cookies
 app.set('trust proxy', 1);
 
-/*************************************/
-/******* Redis session storage *******/
-/*************************************/
+// Redis session storage
 var redis = require('redis');
 var RedisStore = require('connect-redis-crypto')(session);
 var client = redis.createClient(config.redis.port, config.redis.host);
@@ -118,7 +116,7 @@ app.use(require('hof').middleware.errors({
   debug: config.env === 'development'
 }));
 
-/*eslint camelcase: 0*/
+// eslint-ignore-next-line camelcase
 app.listen(config.port, config.listen_host);
-/*eslint camelcase: 1*/
+
 logger.info('App listening on port', config.port);
