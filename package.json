@@ -44,7 +44,7 @@
     "express-session": "^1.11.3",
     "hof": "^8.0.0",
     "hogan-express-strict": "^0.5.4",
-    "jquery": "^2.1.4",
+    "jquery": "^3.1.0",
     "moment": "^2.10.3",
     "moment-business": "^2.0.0",
     "node-sass": "^3.7.0",
